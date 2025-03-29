@@ -21,7 +21,7 @@ export default function Home() {
         />
         <meta property="og:url" content="https://retroid-pocket-5-hub.vercel.app/" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/images/og-image-rp5.jpg" />
+        <meta property="og:image" content="/images/retroid-pocket-5.png" />
         <link rel="canonical" href="https://retroid-pocket-5-hub.vercel.app/" />
       </Head>
       <div className="flex flex-col items-center p-6 pt-12 space-y-12">
@@ -38,12 +38,12 @@ export default function Home() {
         {/* Imagen y botón de compra */}
         <div className="flex flex-col items-center">
           <img
-            src="/images/retroid_pocket_5.webp"
+            src="/images/retroid-pocket-5.png"
             alt="Retroid Pocket 5 Handheld"
-            className="w-96 mb-4"
+            className="w-full max-w-[600px] mb-4"
           />
           <a
-            href="https://s.click.aliexpress.com/e/_RetroidPocket5BuyLink" // <-- cambia este enlace si tienes uno específico
+            href="https://s.click.aliexpress.com/e/_Evas2La" // <-- cambia este enlace si tienes uno específico
             target="_blank"
             rel="noopener noreferrer"
             className="retro-button w-52 text-center text-sm font-bold py-2 px-4 border-4 border-black shadow-lg bg-red-600 text-white"
@@ -65,14 +65,14 @@ export default function Home() {
               Icon={FaBook}
             />
             <SectionCard 
-              title="FW + Tools" 
-              description="Latest firmware updates." 
-              link="/firmwares" 
+              title="Emulation" 
+              description="Emulators and system configs." 
+              link="/emulation" 
               Icon={FaMicrochip}
             />
             <SectionCard 
-              title="ACCS" 
-              description="Recommended accessories." 
+              title="Accessories" 
+              description="Recommended add-ons." 
               link="/accessories" 
               Icon={FaCogs}
             />
@@ -89,13 +89,14 @@ export default function Home() {
               Icon={FaQuestionCircle}
             />
             <SectionCard 
-              title="Compat" 
-              description="Game compatibility lists." 
-              link="/compatibility" 
+              title="Game Picks" 
+              description="Top Android games for RP5." 
+              link="/game-picks" 
               Icon={FaPuzzlePiece}
             />
           </div>
         </div>
+
 
         {/* Support Section */}
         <div className="flex flex-col items-center text-center space-y-4">
@@ -120,7 +121,7 @@ export default function Home() {
               ☕ Donate
             </a>
             <a
-              href="https://s.click.aliexpress.com/e/_RetroidPocket5BuyLink"
+              href="https://s.click.aliexpress.com/e/_Evas2La"
               target="_blank"
               rel="noopener noreferrer"
               className="retro-button bg-red-600 text-white font-bold py-2 px-4 border-4 border-black shadow-lg w-52 text-center text-sm"

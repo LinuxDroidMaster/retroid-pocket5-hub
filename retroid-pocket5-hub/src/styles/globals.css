@@ -3,28 +3,54 @@
 @tailwind utilities;
 
 body {
-  @apply bg-white text-black dark:bg-black dark:text-white;
+  @apply bg-white text-black dark:bg-[#1c1c2c] dark:text-white;
   font-family: theme("fontFamily.retro");
   text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
-/* Botón con efecto retro: se ha eliminado el fondo predeterminado para que cada botón defina el suyo */
+/* Retro Button base */
 .retro-button {
-  @apply text-white border-4 border-black px-4 py-2 shadow-lg;
+  @apply border-4 border-black px-4 py-2 shadow-lg rounded-sm tracking-wide;
   transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
 }
 
+/* Hover efecto general */
 .retro-button:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 6px 6px black; /* Efecto hover en modo claro */
+  box-shadow: 6px 6px black;
 }
 
-/* Efecto hover para modo oscuro */
 .dark .retro-button:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: 6px 6px #e0e0e0; /* Efecto hover en modo oscuro */
+  box-shadow: 6px 6px #e0e0e0;
 }
 
+/* Botón específico: YouTube */
+.retro-button.youtube {
+  @apply bg-red-600 text-white;
+}
+
+/* Botón específico: Ko-fi */
+.retro-button.kofi {
+  @apply bg-sky-400 text-white;
+}
+
+/* Botón específico: AliExpress */
+.retro-button.aliexpress {
+  @apply bg-red-600 text-white;
+}
+
+/* Botón específico: Discord */
+.retro-button.discord {
+  @apply bg-[#7289DA] text-white;
+}
+
+/* Botón específico: Reddit */
+.retro-button.reddit {
+  @apply bg-[#FF4500] text-white;
+}
+
+/* FAQ Links estilo retro */
 .faq-link {
   color: #facc15;
   font-weight: bold;

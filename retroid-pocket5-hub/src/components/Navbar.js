@@ -43,7 +43,7 @@ export default function Navbar() {
     } else {
       document.removeEventListener("mousedown", handleClickOutside);
     }
-    
+
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
@@ -55,11 +55,9 @@ export default function Navbar() {
         <nav className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="flex items-center">
-            {/* Título para pantallas grandes */}
             <h1 className="hidden md:block text-sm sm:text-base font-bold text-retroYellow whitespace-nowrap overflow-hidden truncate pr-4 border-r-2 border-gray-600 mr-4 transition-transform duration-200 hover:scale-105">
               <Link href="/">Retroid Pocket 5 Hub</Link>
             </h1>
-            {/* Título abreviado para móviles */}
             <h1 className="block md:hidden text-sm font-bold text-retroYellow whitespace-nowrap overflow-hidden truncate transition-transform duration-200 hover:scale-105">
               <Link href="/">RP5 Hub</Link>
             </h1>
@@ -68,23 +66,23 @@ export default function Navbar() {
           {/* Menú Desktop */}
           <ul className="hidden md:flex gap-6 text-sm">
             <li>
-              <Link href="/firmwares" className="hover:text-gray-400 px-2 whitespace-nowrap">
-                FW + Tools
-              </Link>
-            </li>
-            <li>
-              <Link href="/compatibility" className="hover:text-gray-400 px-2">
-                Compat
-              </Link>
-            </li>
-            <li>
               <Link href="/guides" className="hover:text-gray-400 px-2">
                 Guides
               </Link>
             </li>
             <li>
+              <Link href="/emulation" className="hover:text-gray-400 px-2">
+                Emulation
+              </Link>
+            </li>
+            <li>
+              <Link href="/game-picks" className="hover:text-gray-400 px-2">
+                Game Picks
+              </Link>
+            </li>
+            <li>
               <Link href="/accessories" className="hover:text-gray-400 px-2">
-                ACCS
+                Accessories
               </Link>
             </li>
             <li className="relative" ref={moreRef}>
@@ -112,7 +110,7 @@ export default function Navbar() {
             </li>
           </ul>
 
-          {/* Botón de modo oscuro (Desktop) */}
+          {/* Botón modo oscuro (Desktop) */}
           <div className="hidden md:flex items-center">
             <button onClick={toggleDarkMode} className="retro-button px-3 py-1 text-xs ml-6">
               {darkMode ? "☀️" : "🌙"}
@@ -133,23 +131,23 @@ export default function Navbar() {
         <div className="bg-gray-900 text-white px-4 py-4">
           <ul className="flex flex-col gap-4">
             <li>
-              <Link href="/firmwares" className="hover:text-gray-400" onClick={() => setMenuOpen(false)}>
-                FW + Tools
-              </Link>
-            </li>
-            <li>
-              <Link href="/compatibility" className="hover:text-gray-400" onClick={() => setMenuOpen(false)}>
-                Compat
-              </Link>
-            </li>
-            <li>
               <Link href="/guides" className="hover:text-gray-400" onClick={() => setMenuOpen(false)}>
                 Guides
               </Link>
             </li>
             <li>
+              <Link href="/emulation" className="hover:text-gray-400" onClick={() => setMenuOpen(false)}>
+                Emulation
+              </Link>
+            </li>
+            <li>
+              <Link href="/game-picks" className="hover:text-gray-400" onClick={() => setMenuOpen(false)}>
+                Game Picks
+              </Link>
+            </li>
+            <li>
               <Link href="/accessories" className="hover:text-gray-400" onClick={() => setMenuOpen(false)}>
-                ACCS
+                Accessories
               </Link>
             </li>
             <li>

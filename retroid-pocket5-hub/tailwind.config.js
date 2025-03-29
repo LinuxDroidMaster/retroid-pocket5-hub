@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: "class", // Permite cambiar el modo manualmente con "dark"
+  darkMode: "class",
   content: [
     "./src/app/**/*.{js,jsx}",
     "./src/components/**/*.{js,jsx}",
@@ -12,9 +12,10 @@ module.exports = {
         retro: ["'Press Start 2P'", "cursive"],
       },
       colors: {
-        retroBlue: "#00A3E0",
-        retroPurple: "#8B00E0",
+        retroBlue: "#00A3E0", // puedes cambiar este a un azul más GameCube si lo deseas
+        retroPurple: "#6A0DAD", // clásico GameCube
         retroYellow: "#FFD700",
+        gamecubeGray: "#1c1c2c", // fondo oscuro con tono púrpura
       },
     },
   },
