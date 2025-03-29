@@ -1,0 +1,64 @@
+{
+  "videos": [
+    {
+      "id": 1,
+      "title": "Review de Retro Game Corps",
+      "description": "Retro Game Corps reviews the TrimUI Smart Pro, highlighting its design and performance. The video helps you decide if it's the right retro handheld for you.",
+      "thumbnail": "https://img.youtube.com/vi/GPyLFyZOeaY/hqdefault.jpg",
+      "videoUrl": "https://www.youtube.com/watch?v=GPyLFyZOeaY"
+    },
+    {
+      "id": 2,
+      "title": "Review de TechDWeeb",
+      "description": "TechDWeeb examines the TrimUI Smart Pro, focusing on build quality and firmware performance. It offers practical insights for potential buyers.",
+      "thumbnail": "https://img.youtube.com/vi/qZj4uRJYZwY/hqdefault.jpg",
+      "videoUrl": "https://www.youtube.com/watch?v=qZj4uRJYZwY"
+    },
+    {
+      "id": 3,
+      "title": "The TrimUI Smart Pro quietly became even more awesome! (CrossMix-OS Setup Guide)",
+      "description": "Joey's Retro Handhelds shows how to set up CrossMix‑OS on the TrimUI Smart Pro. The guide provides clear, step-by-step instructions.",
+      "thumbnail": "https://img.youtube.com/vi/KCk9OwqN930/hqdefault.jpg",
+      "videoUrl": "https://www.youtube.com/watch?v=KCk9OwqN930"
+    },
+    {
+      "id": 4,
+      "title": "MinUI on the TrimUI Smart Pro & Brick! Setup Guide & Why You'd Want It",
+      "description": "This video explains how to install MinUI on the TrimUI Smart Pro and its benefits. It offers practical setup tips in a concise format.",
+      "thumbnail": "https://img.youtube.com/vi/Mj3H4-Zd1lU/hqdefault.jpg",
+      "videoUrl": "https://www.youtube.com/watch?v=Mj3H4-Zd1lU"
+    }
+  ],
+  "guides": [
+    {
+      "id": 1,
+      "title": "CPU Tunning Sheet",
+      "description": "This guide provides CPU tuning tips for optimal performance on the TrimUI Smart Pro.",
+      "link": "https://docs.google.com/spreadsheets/d/1gJ0Fr3Riy2xp1SpHoNUcQQm_NVI4zG9rcYtNoZjmMbQ/edit#gid=0"
+    },
+    {
+      "id": 2,
+      "title": "CrossMix‑OS Wiki",
+      "description": "A community-maintained resource with guides and troubleshooting for CrossMix‑OS.",
+      "link": "https://github.com/cizia64/CrossMix-OS/wiki"
+    },
+    {
+      "id": 3,
+      "title": "General TSP Wiki",
+      "description": "A comprehensive wiki with setup guides and customization tips for the TrimUI Smart Pro.",
+      "link": "https://github.com/Hoo-Cognito/Other-Handheld-Repos/wiki/Trimui-Smart-Pro"
+    },
+    {
+      "id": 4,
+      "title": "TrimUI Smart Pro Setup Guide",
+      "description": "A complete walkthrough on setting up the TrimUI Smart Pro for optimal performance.",
+      "link": "https://retrohandheldguides.com/trimui-smart-pro-setup-guide/"
+    },
+    {
+      "id": 5,
+      "title": "TrimUI Smart Pro Setup Guide by Joey's Retro Handhelds",
+      "description": "Joey's Retro Handhelds provides a comprehensive guide covering every step to set up your TrimUI Smart Pro.",
+      "link": "https://joeysretrohandhelds.com/guides/trimui-smart-pro-setup-guide/"
+    }
+  ]
+}
