@@ -3,9 +3,9 @@ import { useState, useEffect } from "react";
 
 export default function GuidesPage() {
   const [data, setData] = useState({ videos: [], guides: [] });
-  const [search, setSearch] = useState(""); // Estado de búsqueda
-  const [filteredVideos, setFilteredVideos] = useState([]); // Videos filtrados
-  const [filteredGuides, setFilteredGuides] = useState([]); // Guías filtradas
+  const [search, setSearch] = useState("");
+  const [filteredVideos, setFilteredVideos] = useState([]);
+  const [filteredGuides, setFilteredGuides] = useState([]);
 
   useEffect(() => {
     fetch("/data/tutorials.json")
@@ -18,7 +18,6 @@ export default function GuidesPage() {
       .catch((err) => console.error("Error loading guides:", err));
   }, []);
 
-  // Función para filtrar videos y guías mientras el usuario escribe
   useEffect(() => {
     const lowerSearch = search.toLowerCase();
 
@@ -40,12 +39,11 @@ export default function GuidesPage() {
   }, [search, data]);
 
   return (
-    <div className="max-w-3xl mx-auto p-4">
+    <div className="max-w-6xl mx-auto p-4">
       <h1 className="text-3xl font-bold text-retroPurple text-center mb-6">
         Guides & Tutorials
       </h1>
 
-      {/* Barra de búsqueda */}
       <input
         type="text"
         placeholder="Search videos or guides..."
@@ -54,25 +52,24 @@ export default function GuidesPage() {
         className="w-full p-2 mb-6 border-4 border-black text-black"
       />
 
-      {/* Sección de videos */}
       <h2 className="text-2xl font-bold text-retroBlue mb-4">Video Tutorials</h2>
       {filteredVideos.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {filteredVideos.map((video) => (
             <a
               key={video.id}
               href={video.videoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="border-4 border-black p-2 bg-retroBlue text-white block hover:scale-105 transition-transform"
+              className="border-4 border-black p-4 bg-retroBlue text-white block hover:scale-105 transition-transform"
             >
               <img
                 src={video.thumbnail}
                 alt={video.title}
-                className="w-full border-4 border-black"
+                className="w-full border-4 border-black mb-2"
               />
-              <h2 className="text-lg font-bold mt-2">{video.title}</h2>
-              <p className="text-sm">{video.description}</p>
+              <h2 className="text-xl font-bold mb-1">{video.title}</h2>
+              <p className="text-sm text-gray-200">{video.description}</p>
             </a>
           ))}
         </div>
@@ -80,19 +77,18 @@ export default function GuidesPage() {
         <p className="text-center text-retroBlue font-bold">No videos found.</p>
       )}
 
-      {/* Sección de guías */}
       <h2 className="text-2xl font-bold text-retroBlue mb-4">Written Guides</h2>
       {filteredGuides.length > 0 ? (
-        <ul className="space-y-4">
+        <ul className="space-y-6">
           {filteredGuides.map((guide) => (
-            <li key={guide.id} className="border-4 border-black p-4 bg-retroPurple text-white">
-              <h2 className="text-xl font-bold">{guide.title}</h2>
-              <p className="text-sm">{guide.description}</p>
+            <li key={guide.id} className="border-4 border-black p-6 bg-retroPurple text-white">
+              <h2 className="text-xl font-bold mb-1">{guide.title}</h2>
+              <p className="text-sm text-gray-200">{guide.description}</p>
               <a
                 href={guide.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="retro-button mt-2 inline-block"
+                className="retro-button mt-3 inline-block"
               >
                 Read Guide
               </a>
@@ -103,7 +99,6 @@ export default function GuidesPage() {
         <p className="text-center text-retroBlue font-bold">No guides found.</p>
       )}
 
-      {/* Mensaje si no hay coincidencias en ninguna categoría */}
       {filteredVideos.length === 0 && filteredGuides.length === 0 && (
         <p className="text-center text-retroRed font-bold mt-6">No results found.</p>
       )}

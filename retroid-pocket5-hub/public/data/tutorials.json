@@ -2,63 +2,52 @@
   "videos": [
     {
       "id": 1,
-      "title": "Review de Retro Game Corps",
-      "description": "Retro Game Corps reviews the TrimUI Smart Pro, highlighting its design and performance. The video helps you decide if it's the right retro handheld for you.",
-      "thumbnail": "https://img.youtube.com/vi/GPyLFyZOeaY/hqdefault.jpg",
-      "videoUrl": "https://www.youtube.com/watch?v=GPyLFyZOeaY"
+      "title": "Retro Game Corps - Retroid Pocket 5 (and Mini) Starter Guide",
+      "description": "Comprehensive starter guide covering setup and tips for both the Retroid Pocket 5 and Mini.",
+      "thumbnail": "https://img.youtube.com/vi/-CJ9WVFmYXc/hqdefault.jpg",
+      "videoUrl": "https://youtu.be/-CJ9WVFmYXc?si=uRA9upg2qnAmNMfT"
     },
     {
       "id": 2,
-      "title": "Review de TechDWeeb",
-      "description": "TechDWeeb examines the TrimUI Smart Pro, focusing on build quality and firmware performance. It offers practical insights for potential buyers.",
-      "thumbnail": "https://img.youtube.com/vi/qZj4uRJYZwY/hqdefault.jpg",
-      "videoUrl": "https://www.youtube.com/watch?v=qZj4uRJYZwY"
+      "title": "Joey's Retro Handhelds - RP5/Mini Setup Guide",
+      "description": "Great video guide for the RP5, Mini, and even other Android handhelds like the Odin 2.",
+      "thumbnail": "https://img.youtube.com/vi/iw1QdieBE0A/hqdefault.jpg",
+      "videoUrl": "https://youtu.be/iw1QdieBE0A?si=Bmg2FcUyzWZnQUJA"
     },
     {
       "id": 3,
-      "title": "The TrimUI Smart Pro quietly became even more awesome! (CrossMix-OS Setup Guide)",
-      "description": "Joey's Retro Handhelds shows how to set up CrossMix‑OS on the TrimUI Smart Pro. The guide provides clear, step-by-step instructions.",
-      "thumbnail": "https://img.youtube.com/vi/KCk9OwqN930/hqdefault.jpg",
-      "videoUrl": "https://www.youtube.com/watch?v=KCk9OwqN930"
+      "title": "Ryan Retro - RP5 Setup Guide (EASY)",
+      "description": "A beginner-friendly walkthrough to get your RP5 up and running quickly.",
+      "thumbnail": "https://img.youtube.com/vi/ySjfpo-gEKo/hqdefault.jpg",
+      "videoUrl": "https://youtu.be/ySjfpo-gEKo?si=3JuVk-zic1pNAEvN"
     },
     {
       "id": 4,
-      "title": "MinUI on the TrimUI Smart Pro & Brick! Setup Guide & Why You'd Want It",
-      "description": "This video explains how to install MinUI on the TrimUI Smart Pro and its benefits. It offers practical setup tips in a concise format.",
-      "thumbnail": "https://img.youtube.com/vi/Mj3H4-Zd1lU/hqdefault.jpg",
-      "videoUrl": "https://www.youtube.com/watch?v=Mj3H4-Zd1lU"
+      "title": "Ryan Retro - RP5 RetroArch Setup Guide (EASY)",
+      "description": "Covers how to properly install and configure RetroArch on the Retroid Pocket 5.",
+      "thumbnail": "https://img.youtube.com/vi/SVYObx6YWl4/hqdefault.jpg",
+      "videoUrl": "https://youtu.be/SVYObx6YWl4?si=ihwjeGrDL9fJc40A"
+    },
+    {
+      "id": 5,
+      "title": "Ryan Retro YouTube Channel",
+      "description": "For Switch, WiiU, Wii, NDS, 3DS and more on the RP5, Ryan Retro is a must-follow.",
+      "thumbnail": "https://yt3.googleusercontent.com/5umSHbCDGkv3s5FXiem1G4Sur7TGP2Ltmrq4BpeKWNRVHcqGS8BDUk7k92Iekm_e65WcT15SGeo=s160-c-k-c0x00ffffff-no-rj",
+      "videoUrl": "https://www.youtube.com/@RyanRetro"
     }
   ],
   "guides": [
     {
       "id": 1,
-      "title": "CPU Tunning Sheet",
-      "description": "This guide provides CPU tuning tips for optimal performance on the TrimUI Smart Pro.",
-      "link": "https://docs.google.com/spreadsheets/d/1gJ0Fr3Riy2xp1SpHoNUcQQm_NVI4zG9rcYtNoZjmMbQ/edit#gid=0"
+      "title": "Retro Game Corps - RP5 Written Guide",
+      "description": "Written setup and starter guide for the Retroid Pocket series and newer Android handhelds.",
+      "link": "https://retrogamecorps.com/2022/01/16/retroid-pocket-2-starter-guide/"
     },
     {
       "id": 2,
-      "title": "CrossMix‑OS Wiki",
-      "description": "A community-maintained resource with guides and troubleshooting for CrossMix‑OS.",
-      "link": "https://github.com/cizia64/CrossMix-OS/wiki"
-    },
-    {
-      "id": 3,
-      "title": "General TSP Wiki",
-      "description": "A comprehensive wiki with setup guides and customization tips for the TrimUI Smart Pro.",
-      "link": "https://github.com/Hoo-Cognito/Other-Handheld-Repos/wiki/Trimui-Smart-Pro"
-    },
-    {
-      "id": 4,
-      "title": "TrimUI Smart Pro Setup Guide",
-      "description": "A complete walkthrough on setting up the TrimUI Smart Pro for optimal performance.",
-      "link": "https://retrohandheldguides.com/trimui-smart-pro-setup-guide/"
-    },
-    {
-      "id": 5,
-      "title": "TrimUI Smart Pro Setup Guide by Joey's Retro Handhelds",
-      "description": "Joey's Retro Handhelds provides a comprehensive guide covering every step to set up your TrimUI Smart Pro.",
-      "link": "https://joeysretrohandhelds.com/guides/trimui-smart-pro-setup-guide/"
+      "title": "Retro Handhelds - RP5 Setup Guide",
+      "description": "Detailed written guide from the Retro Handhelds community on setting up the RP5.",
+      "link": "https://retrohandhelds.gg/retroid-pocket-5-setup-guide/"
     }
   ]
 }
