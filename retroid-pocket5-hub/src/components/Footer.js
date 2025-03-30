@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="p-4 bg-gray-800 text-white text-center text-sm">
-      <p>TrimUI Smart Pro Hub</p>
+      <p>Retroid Pocket 5 Hub</p>
       <p className="mt-2 flex justify-center items-center gap-2">
         With
         <img
