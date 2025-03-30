@@ -64,24 +64,24 @@ export default function Navbar() {
           </div>
 
           {/* Menú Desktop */}
-          <ul className="hidden md:flex gap-6 text-sm">
+          <ul className="hidden md:flex gap-6 text-sm justify-center items-center whitespace-nowrap">
             <li>
-              <Link href="/guides" className="hover:text-gray-400 px-2">
+              <Link href="/guides" className="hover:text-gray-400 px-2 whitespace-nowrap">
                 Guides
               </Link>
             </li>
             <li>
-              <Link href="/emulation" className="hover:text-gray-400 px-2">
+              <Link href="/emulation" className="hover:text-gray-400 px-2 whitespace-nowrap">
                 Emulation
               </Link>
             </li>
             <li>
-              <Link href="/game-picks" className="hover:text-gray-400 px-2">
+              <Link href="/game-picks" className="hover:text-gray-400 px-2 whitespace-nowrap">
                 Game Picks
               </Link>
             </li>
             <li>
-              <Link href="/accessories" className="hover:text-gray-400 px-2">
+              <Link href="/accessories" className="hover:text-gray-400 px-2 whitespace-nowrap">
                 Accessories
               </Link>
             </li>
@@ -109,6 +109,7 @@ export default function Navbar() {
               )}
             </li>
           </ul>
+
 
           {/* Botón modo oscuro (Desktop) */}
           <div className="hidden md:flex items-center">
