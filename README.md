@@ -8,7 +8,7 @@ This project aims to serve as a centralized, lightweight hub for everything RP5-
 
 ## 🌐 Live Website
 
-👉 https://retroid-pocket-5-hub.vercel.app/
+👉 https://retroid-pocket5-hub.vercel.app/emulation
 
 ---
 
