@@ -34,6 +34,34 @@
       "description": "For Switch, WiiU, Wii, NDS, 3DS and more on the RP5, Ryan Retro is a must-follow.",
       "thumbnail": "https://yt3.googleusercontent.com/5umSHbCDGkv3s5FXiem1G4Sur7TGP2Ltmrq4BpeKWNRVHcqGS8BDUk7k92Iekm_e65WcT15SGeo=s160-c-k-c0x00ffffff-no-rj",
       "videoUrl": "https://www.youtube.com/@RyanRetro"
+    },
+    {
+      "id": 6,
+      "title": "Batocera on RP5 / Flip 2 / Mini",
+      "description": "Installing Batocera on the Retroid Pocket 5, Flip 2 and Mini with this detailed Linux guide.",
+      "thumbnail": "https://img.youtube.com/vi/cmYjQmGpH60/hqdefault.jpg",
+      "videoUrl": "https://www.youtube.com/watch?v=cmYjQmGpH60"
+    },
+    {
+      "id": 7,
+      "title": "WINLATOR on Retroid Pocket 5 (and Mini) Guide - Retro Tech Dad",
+      "description": "Tutorial for setting up and using WINLATOR on your RP5 to run Windows games.",
+      "thumbnail": "https://img.youtube.com/vi/Ntt93zk94Eg/hqdefault.jpg",
+      "videoUrl": "https://www.youtube.com/watch?v=Ntt93zk94Eg"
+    },
+    {
+      "id": 8,
+      "title": "Switch Emulation on RP5 - Retro Tech Dad",
+      "description": "A video guide on how to emulate Nintendo Switch games using the RP5.",
+      "thumbnail": "https://img.youtube.com/vi/BopLqKADRhY/hqdefault.jpg",
+      "videoUrl": "https://www.youtube.com/watch?v=BopLqKADRhY"
+    },
+    {
+      "id": 9,
+      "title": "Vita3k on Retroid Pocket 5 - BassDerek",
+      "description": "Setup and performance overview of the Vita3k emulator running on the RP5.",
+      "thumbnail": "https://img.youtube.com/vi/KRR723Qtafk/hqdefault.jpg",
+      "videoUrl": "https://www.youtube.com/watch?v=KRR723Qtafk"
     }
   ],
   "guides": [
@@ -48,6 +76,48 @@
       "title": "Retro Handhelds - RP5 Setup Guide",
       "description": "Detailed written guide from the Retro Handhelds community on setting up the RP5.",
       "link": "https://retrohandhelds.gg/retroid-pocket-5-setup-guide/"
+    },
+    {
+      "id": 3,
+      "title": "The Ultimate ROM File Compression Guide",
+      "description": "Reduce your ROM sizes and organize your collection efficiently.",
+      "link": "https://retrogamecorps.com/2023/02/06/the-ultimate-rom-file-compression-guide/"
+    },
+    {
+      "id": 4,
+      "title": "RP5 Tips and Tricks - Retro Handhelds",
+      "description": "Useful tweaks and lesser-known tricks to improve your RP5 experience.",
+      "link": "https://retrohandhelds.gg/retroid-pocket-5-tips-and-tricks-part-1/"
+    },
+    {
+      "id": 5,
+      "title": "How to Set Up PS Remote Play on RP5",
+      "description": "Follow this guide to stream your PS4 or PS5 games to your RP5.",
+      "link": "https://retrohandhelds.gg/how-to-set-up-ps-remote-play-retroid-pocket-5/"
+    },
+    {
+      "id": 6,
+      "title": "RetroArch Starter Guide - Retro Game Corps",
+      "description": "Perfect guide for beginners looking to configure RetroArch properly.",
+      "link": "https://retrogamecorps.com/2022/02/28/retroarch-starter-guide/"
+    },
+    {
+      "id": 7,
+      "title": "Batocera and ROCKNIX Linux Install Guide - RP5/Mini",
+      "description": "Dual guide to install Batocera or ROCKNIX on your RP5 or Mini.",
+      "link": "https://retrohandhelds.gg/retroid-pocket-5-mini-batocera-rocknix-install-guide/"
+    },
+    {
+      "id": 8,
+      "title": "Ryan Retro's RP5 Emulator Compatibility Spreadsheet",
+      "description": "Master list of emulator settings and compatibility for various systems.",
+      "link": "https://docs.google.com/spreadsheets/d/1BiFqYhWWJRHcR_O_LDbv2OwZ1kTLkClMd0uGVjpaXWw/edit?gid=103116813#gid=103116813"
+    },
+    {
+      "id": 9,
+      "title": "Rocknix Wiki - Install & Docs",
+      "description": "Community-maintained wiki for the Rocknix Linux OS on RP5.",
+      "link": "https://rocknix.org/play/install/"
     }
   ]
 }
