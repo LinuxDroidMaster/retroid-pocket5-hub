@@ -35,22 +35,33 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Imagen y botón de compra */}
+        {/* Imagen y botones de compra */}
         <div className="flex flex-col items-center">
           <img
             src="/images/retroid-pocket-5.png"
             alt="Retroid Pocket 5 Handheld"
             className="w-full max-w-[600px] mb-4"
           />
-          <a
-            href="https://s.click.aliexpress.com/e/_Evas2La" // <-- cambia este enlace si tienes uno específico
-            target="_blank"
-            rel="noopener noreferrer"
-            className="retro-button w-52 text-center text-sm font-bold py-2 px-4 border-4 border-black shadow-lg bg-red-600 text-white"
-          >
-            Buy on AliExpress
-          </a>
+          <div className="flex flex-col md:flex-row gap-3">
+            <a
+              href="https://s.click.aliexpress.com/e/_Evas2La"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="retro-button w-52 text-center text-sm font-bold py-2 px-4 border-4 border-black shadow-lg bg-red-600 text-white"
+            >
+              Buy on AliExpress
+            </a>
+            <a
+              href="https://www.goretroid.com/collections/retro-game-system/products/retroid-pocket-5-handheld"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="retro-button w-52 text-center text-sm font-bold py-2 px-4 border-4 border-black shadow-lg bg-gray-300 text-black hover:bg-gray-200"
+            >
+              Buy on GoRetroid
+            </a>
+          </div>
         </div>
+
 
         {/* Tarjetas interactivas para explorar las secciones */}
         <div className="w-full">
