@@ -1,7 +1,53 @@
-import Head from 'next/head';
-import { FaBook, FaMicrochip, FaCogs, FaListAlt, FaQuestionCircle, FaPuzzlePiece } from 'react-icons/fa';
+import Head from "next/head";
+import Link from "next/link";
+import {
+  FaBook,
+  FaMicrochip,
+  FaCogs,
+  FaListAlt,
+  FaQuestionCircle,
+  FaPuzzlePiece,
+} from "react-icons/fa";
 
 export default function Home() {
+  const sectionCards = [
+    {
+      title: "Guides",
+      description: "Step-by-step tutorials",
+      url: "/guides",
+      icon: FaBook,
+    },
+    {
+      title: "Emulation",
+      description: "Emulators and system configs",
+      url: "/emulation",
+      icon: FaMicrochip,
+    },
+    {
+      title: "Accessories",
+      description: "Recommended add-ons",
+      url: "/accessories",
+      icon: FaCogs,
+    },
+    {
+      title: "Specs",
+      description: "Technical specifications",
+      url: "/specs",
+      icon: FaListAlt,
+    },
+    {
+      title: "FAQs",
+      description: "Common questions answered",
+      url: "/faqs",
+      icon: FaQuestionCircle,
+    },
+    {
+      title: "Game Picks",
+      description: "Top Android games for RP5",
+      url: "/game-picks",
+      icon: FaPuzzlePiece,
+    },
+  ];
   return (
     <>
       <Head>
@@ -14,12 +60,18 @@ export default function Home() {
           name="keywords"
           content="Retroid Pocket 5, RP5, Retro Handheld, Tutorials, Videos, Firmware, Guides, Accessories, Specs, FAQs, Compatibility"
         />
-        <meta property="og:title" content="Retroid Pocket 5 Hub - Retro Handheld Tutorials & Videos" />
+        <meta
+          property="og:title"
+          content="Retroid Pocket 5 Hub - Retro Handheld Tutorials & Videos"
+        />
         <meta
           property="og:description"
           content="Your ultimate source for the best tutorials and videos on retro handhelds and the Retroid Pocket 5. Discover guides, firmwares, accessories, specs, FAQs and more."
         />
-        <meta property="og:url" content="https://retroid-pocket-5-hub.vercel.app/" />
+        <meta
+          property="og:url"
+          content="https://retroid-pocket-5-hub.vercel.app/"
+        />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/images/retroid-pocket-5.png" />
         <link rel="canonical" href="https://retroid-pocket-5-hub.vercel.app/" />
@@ -62,57 +114,29 @@ export default function Home() {
           </div>
         </div>
 
-
         {/* Tarjetas interactivas para explorar las secciones */}
         <div className="w-full">
           <h2 className="text-2xl font-bold text-retroBlue dark:text-retroPurple text-center mb-4">
             Explore the Sections
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <SectionCard 
-              title="Guides" 
-              description="Step-by-step tutorials." 
-              link="/guides" 
-              Icon={FaBook}
-            />
-            <SectionCard 
-              title="Emulation" 
-              description="Emulators and system configs." 
-              link="/emulation" 
-              Icon={FaMicrochip}
-            />
-            <SectionCard 
-              title="Accessories" 
-              description="Recommended add-ons." 
-              link="/accessories" 
-              Icon={FaCogs}
-            />
-            <SectionCard 
-              title="Specs" 
-              description="Technical specifications." 
-              link="/specs" 
-              Icon={FaListAlt}
-            />
-            <SectionCard 
-              title="FAQs" 
-              description="Common questions answered." 
-              link="/faqs" 
-              Icon={FaQuestionCircle}
-            />
-            <SectionCard 
-              title="Game Picks" 
-              description="Top Android games for RP5." 
-              link="/game-picks" 
-              Icon={FaPuzzlePiece}
-            />
+            {sectionCards.map((c) => (
+              <SectionCard
+                key={c.url}
+                title={c.title}
+                description={c.description}
+                link={c.url}
+                Icon={c.icon}
+              />
+            ))}
           </div>
         </div>
-
 
         {/* Support Section */}
         <div className="flex flex-col items-center text-center space-y-4">
           <p className="text-xs text-gray-700 dark:text-gray-300">
-            Enjoying this project? Support me on YouTube, Ko‑fi, or by shopping on AliExpress at no extra cost!
+            Enjoying this project? Support me on YouTube, Ko‑fi, or by shopping
+            on AliExpress at no extra cost!
           </p>
           <div className="flex flex-col md:flex-row gap-3">
             <a
@@ -171,17 +195,14 @@ export default function Home() {
 
 function SectionCard({ title, description, link, Icon }) {
   return (
-    <a 
+    <Link
       href={link}
-      target="_blank"
-      rel="noopener noreferrer"
+      target="_self"
       className="block border-4 border-black p-4 bg-retroBlue text-white text-center retro-button hover:scale-105 transition-transform duration-150"
     >
-      {Icon && (
-        <Icon size={48} className="mx-auto mb-2" />
-      )}
+      {Icon && <Icon size={48} className="mx-auto mb-2" />}
       <h3 className="text-xl font-bold mb-1 break-words">{title}</h3>
       <p className="text-sm">{description}</p>
-    </a>
+    </Link>
   );
 }
