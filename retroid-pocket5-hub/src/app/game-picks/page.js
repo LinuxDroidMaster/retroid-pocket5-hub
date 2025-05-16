@@ -34,7 +34,7 @@ export default function GamePicksPage() {
           Game Picks
         </h1>
         <p className="text-sm mb-6 text-center">
-          Looking for the best native Android games for your RP5? While this page features some of my personal recommendations, be sure to explore EmuHub for a wider and more up-to-date selection.
+          Looking for the best native Android games for your RP5 or any other handheld? Be sure to explore EmuHub for a wider and more up-to-date selection.
         </p>
 
         <div className="bg-retroBlue border-4 border-black p-4 text-center shadow-md dark:bg-[#2f2b45]">
